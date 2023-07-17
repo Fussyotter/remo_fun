@@ -1,0 +1,16 @@
+.user-message {
+    background-color: #d4f0c6;
+    border: 1px solid #8dc891;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+  }
+  
+  .ai-message {
+    background-color: #c6d4f0;
+    border: 1px solid #899dc8;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+  }
+  

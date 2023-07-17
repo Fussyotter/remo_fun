@@ -1,7 +1,6 @@
 'use client'
 import { useState, useEffect } from 'react';
 import { useChat } from 'ai/react'
-import EvaluationGuide from './evalGuide/page'
 
 export default function Chat() {
   const { messages, input, handleInputChange, handleSubmit } = useChat()
@@ -22,8 +21,8 @@ export default function Chat() {
       {/* <EvaluationGuide /> */}
       <div className="mx-auto w-full max-w-md py-24 flex flex-col stretch">
         {messages.map(m => (
-          <div key={m.id}>
-            {m.role === 'user' ? 'User: ' : 'AI: '}
+          <div key={m.id} className={m.role === 'user' ? 'user-message' : 'ai-message'}>
+
             {m.content}
           </div>
         ))}
